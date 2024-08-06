@@ -1,0 +1,130 @@
+/* barra de nav */
+.navbar {
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo de navbar responsive */
+@media screen and (max-width: 47.9375rem) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* pagina principal */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prcp {
+    background-color: aliceblue;
+    min-height: 28.125rem;
+    text-align: center;
+} 
+.prcp h1 {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.pag-principal {
+    padding: 4.375rem;
+}
+
+.img-perfil {
+    height: 13.75rem
+}
+
+.prcp h2 {
+    font-size: 1.5rem;
+    color: grey;
+
+}
+
+@media screen and (min-width: 700px){
+    .foto-des-web{
+        max-width: 600px;
+    }
+}
+
+.seccion-negro{
+    color: white;
+    background-color:#1b1b32;
+}
+
+.seccion-blanca{
+    color: black;
+    background-color: white;
+}
+
+.about-me{
+    height: 31.25rem;
+    padding: .625rem;
+}
+
+.about-me .contenedor{
+    max-width: 37.5rem;
+    text-align: center;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: .9375rem 0;
+    font-family:"Playfair Display",cursive ;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.experiencia{
+    padding: 2.5rem 2.5rem 3.75rem 2.5rem;
+}
+
+/* icono bootstrap */
+.experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: .5rem 1.1875rem;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 1.5625rem;
+    font-weight: bold;
+    margin: .625rem 0
+}
+
+.experiencia .columna{
+    padding: 1.25rem;
+    border: .125rem solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+ color: white;
+ background-color: #1b1b32;
+}
+
+/* badges */
+.badges-contenedor {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges{
+    margin: .3125rem;
+}

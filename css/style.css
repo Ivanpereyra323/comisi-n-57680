@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 /* logo de navbar responsive */
 @media screen and (max-width: 47.9375rem) {
     .navbar-brand {
@@ -28,7 +29,8 @@ section {
     background-color: aliceblue;
     min-height: 28.125rem;
     text-align: center;
-} 
+}
+
 .prcp h1 {
     font-size: 2.5rem;
     font-family: "Playfair Display", serif;
@@ -48,48 +50,48 @@ section {
 
 }
 
-@media screen and (min-width: 700px){
-    .foto-des-web{
+@media screen and (min-width: 700px) {
+    .foto-des-web {
         max-width: 600px;
     }
 }
 
-.seccion-negro{
+.seccion-negro {
     color: white;
-    background-color:#1b1b32;
+    background-color: #1b1b32;
 }
 
-.seccion-blanca{
+.seccion-blanca {
     color: black;
     background-color: white;
 }
 
-.about-me{
+.about-me {
     height: 31.25rem;
     padding: .625rem;
 }
 
-.about-me .contenedor{
+.about-me .contenedor {
     max-width: 37.5rem;
     text-align: center;
 }
 
-.seccion-titulo{
+.seccion-titulo {
     font-size: 2rem;
     padding: .9375rem 0;
-    font-family:"Playfair Display",cursive ;
+    font-family: "Playfair Display", cursive;
 }
 
-.seccion-texto{
+.seccion-texto {
     font-size: 1.2rem;
 }
 
-.experiencia{
+.experiencia {
     padding: 2.5rem 2.5rem 3.75rem 2.5rem;
 }
 
 /* icono bootstrap */
-.experiencia i{
+.experiencia i {
     font-size: 2.5rem;
     color: #7ade30;
     background-color: #0a0a23;
@@ -97,13 +99,13 @@ section {
     border-radius: 50%;
 }
 
-.experiencia-titulo{
+.experiencia-titulo {
     font-size: 1.5625rem;
     font-weight: bold;
     margin: .625rem 0
 }
 
-.experiencia .columna{
+.experiencia .columna {
     padding: 1.25rem;
     border: .125rem solid #8080804d;
     display: flex;
@@ -114,8 +116,8 @@ section {
 }
 
 .experiencia .columna:hover {
- color: white;
- background-color: #1b1b32;
+    color: white;
+    background-color: #1b1b32;
 }
 
 /* badges */
@@ -125,6 +127,83 @@ section {
     margin: 10px 0;
 }
 
-.badges{
+.badges {
     margin: .3125rem;
+}
+
+/* seccion proyectos */
+.proyectos-recientes {
+    padding: 2.5rem;
+}
+
+/* .seccion-texto{
+    color: black;
+} */
+
+.texto-blanco {
+    color: white;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 17px;
+    }
+
+    .overlay i {
+        font-size: 38px;
+    }
 }
